@@ -1,3 +1,7 @@
 # Bookodemia
 
-Proyecto de **módulo 2**. Las tecnologías utilizadas son **Kotlin**, **Android** y **Material Design**.
+Proyecto de **módulo 2**. 
+## Tecnologías utilizadas
+* Kotlin
+* Android
+* Material Design
