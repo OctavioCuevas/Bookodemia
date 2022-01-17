@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Bookodemia</string>
+    <string name="welcome">¡Bienvenido!</string>
+    <string name="email">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="is_not_user">¿Todavía no tienes cuenta? Regístrate</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="require_field">Campo requerido</string>
+    <string name="icon">Icono</string>
 </resources>
