@@ -7,6 +7,15 @@
     <string name="login">Iniciar sesión</string>
     <string name="hint_email">Correo</string>
     <string name="hint_password">Contraseña</string>
+    <string name="hint_password_c">Confirmar Contraseña</string>
+    <string name="hint_user">Usuario</string>
     <string name="require_field">Campo requerido</string>
     <string name="icon">Icono</string>
+    <string name="back">Regresar</string>
+    <string name="reg_message">Estás a unos cuantos pasos de vivir la mejor experiencia</string>
+    <string name="reg_title">Registra tu información</string>
+    <string name="create_account">Crear cuenta</string>
+    <string name="dif_password">Deben coincidir las contraseñas</string>
+    <string name="wrong_email">Correo incorrecto</string>
+    <string name="wrong_user_data">Usuario/Contraseña incorrectos</string>
 </resources>
