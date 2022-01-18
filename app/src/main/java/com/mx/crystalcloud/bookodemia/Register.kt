@@ -1,4 +1,4 @@
-package com.mx.crystalcloud.bookodemia
+package com.mx.crystalcloud.bookodemia.kotlin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +10,7 @@ import androidx.preference.PreferenceManager
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-import kotlinx.android.synthetic.main.activity_main.*
+import com.mx.crystalcloud.bookodemia.R
 import kotlinx.android.synthetic.main.activity_register.*
 import kotlinx.android.synthetic.main.activity_register.tiet_email
 import kotlinx.android.synthetic.main.activity_register.tiet_password
@@ -84,7 +84,7 @@ class Register : AppCompatActivity() {
         }
 
         tv_back.setOnClickListener {
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 

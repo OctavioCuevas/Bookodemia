@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".kotlin.Home">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/banner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_hi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="bottom"
+                android:includeFontPadding="false"
+                android:text="@string/hi"
+                android:textColor="?colorPrimaryVariant"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:layout_marginStart="20dp"
+                android:includeFontPadding="false"
+                android:text="@string/hint_user"
+                android:textColor="?colorPrimary"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_hi" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_username"
+                app:layout_constraintTop_toBottomOf="@+id/tv_hi"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/primary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:id="@+id/sv_books"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_popular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/popular"
+                android:textAlignment="center"
+                android:textColor="?colorPrimaryVariant"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_book_1"
+                android:layout_width="60dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/books"
+                android:clickable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_popular"
+                app:srcCompat="@drawable/book_1" />
+
+            <ImageView
+                android:id="@+id/iv_book_2"
+                android:layout_width="85dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:contentDescription="@string/books"
+                android:clickable="true"
+                app:layout_constraintStart_toEndOf="@+id/iv_book_1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_popular"
+                app:srcCompat="@drawable/book_2" />
+
+            <ImageView
+                android:id="@+id/iv_book_3"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/books"
+                android:clickable="true"
+                app:layout_constraintStart_toEndOf="@+id/iv_book_2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_popular"
+                app:srcCompat="@drawable/book_1" />
+
+            <ImageView
+                android:id="@+id/iv_book_4"
+                android:layout_width="85dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:contentDescription="@string/books"
+                android:clickable="true"
+                app:layout_constraintStart_toEndOf="@+id/iv_book_3"
+                app:layout_constraintTop_toBottomOf="@+id/tv_popular"
+                app:srcCompat="@drawable/book_2" />
+
+            <ImageView
+                android:id="@+id/iv_book_5"
+                android:layout_width="60dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/books"
+                android:clickable="true"
+                app:layout_constraintStart_toEndOf="@+id/iv_book_4"
+                app:layout_constraintTop_toBottomOf="@+id/tv_popular"
+                app:srcCompat="@drawable/book_1" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_cats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/iv_book_3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_books"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:text="@string/books"
+                        android:textAlignment="center"
+                        android:textColor="?colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_sep_1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_sep_1"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_separator"
+                        android:rotation="90"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_cat"
+                        app:layout_constraintStart_toEndOf="@+id/tv_books"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_cat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:text="@string/categories"
+                        android:textAlignment="center"
+                        android:textColor="?colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:clickable="true"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_sep_2"
+                        app:layout_constraintStart_toEndOf="@+id/tv_sep_1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_sep_2"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_separator"
+                        android:rotation="90"
+                        android:textSize="30sp"
+                        android:clickable="true"
+                        app:layout_constraintEnd_toStartOf="@+id/textView"
+                        app:layout_constraintStart_toEndOf="@+id/tv_cat"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:text="@string/authors"
+                        android:textAlignment="center"
+                        android:textColor="?colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:clickable="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tv_sep_2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/recent"
+                android:textSize="15sp"
+                android:textColor="?colorPrimaryVariant"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_cats" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/white"
+            app:itemIconTint="@color/secondary"
+            app:itemRippleColor="@color/primary"
+            app:menu="@menu/bottom_navigation_menu" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

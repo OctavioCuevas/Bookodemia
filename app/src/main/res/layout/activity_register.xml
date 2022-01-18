@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".Register">
+    tools:context=".kotlin.Register">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -29,6 +29,7 @@
                 android:textColor="?colorPrimary"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_back"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

@@ -1,4 +1,4 @@
-package com.mx.crystalcloud.bookodemia
+package com.mx.crystalcloud.bookodemia.kotlin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,16 +10,17 @@ import androidx.preference.PreferenceManager
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import com.mx.crystalcloud.bookodemia.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private var parent_view: View? = null
+    private var parentView: View? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        parent_view = findViewById(android.R.id.content)
+        parentView = findViewById(android.R.id.content)
 
         setValidationListener(til_email, tiet_email)
         setValidationListener(til_password, tiet_password)
@@ -49,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                     showMessage(applicationContext.resources.getString(R.string.wrong_user_data))
                 } else {
                     if (userEmail == email && userPass == pass) {
-                        showMessage("Usuario correcto")
+                        startActivity(Intent(this, Home::class.java))
                     } else {
                         showMessage(applicationContext.resources.getString(R.string.wrong_user_data))
                     }
@@ -81,7 +82,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showMessage(message:String) {
         Snackbar.make(
-            parent_view!!,
+            parentView!!,
             message,
             Snackbar.LENGTH_SHORT
         ).show()

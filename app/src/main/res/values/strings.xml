@@ -18,4 +18,10 @@
     <string name="dif_password">Deben coincidir las contraseñas</string>
     <string name="wrong_email">Correo incorrecto</string>
     <string name="wrong_user_data">Usuario/Contraseña incorrectos</string>
+    <string name="hi">Hola</string>
+    <string name="popular">Más populares</string>
+    <string name="recent">Recién agregados</string>
+    <string name="books">Libros</string>
+    <string name="categories">Categorías</string>
+    <string name="authors">Autores</string>
 </resources>

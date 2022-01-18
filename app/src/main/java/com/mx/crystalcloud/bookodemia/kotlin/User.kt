@@ -1,4 +1,4 @@
-package com.mx.crystalcloud.bookodemia
+package com.mx.crystalcloud.bookodemia.kotlin
 
 class User(
     var name: String = "",
