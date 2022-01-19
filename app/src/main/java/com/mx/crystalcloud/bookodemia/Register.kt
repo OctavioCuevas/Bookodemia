@@ -21,12 +21,12 @@ import java.util.regex.Pattern
 
 class Register : AppCompatActivity() {
 
-    private var parent_view: View? = null
+    private var parentView: View? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-        parent_view = findViewById(android.R.id.content)
+        parentView = findViewById(android.R.id.content)
 
         setValidationListener(til_user, tiet_user)
         setValidationListener(til_email, tiet_email)
@@ -84,7 +84,7 @@ class Register : AppCompatActivity() {
         }
 
         tv_back.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            super.onBackPressed();
         }
     }
 
@@ -95,7 +95,7 @@ class Register : AppCompatActivity() {
             password = uPassword
         }.also {
             val prefs = PreferenceManager.getDefaultSharedPreferences(this)
-            val uKey = "username";
+            val uKey = "username"
             val uPass = "password"
             val uEmail = "email"
             val storedUser = prefs.getString(uKey, "NaN")
@@ -105,9 +105,9 @@ class Register : AppCompatActivity() {
             editor.putString(uEmail, it.email)
             editor.apply()
             if (storedUser == "NaN") {
-                Snackbar.make(parent_view!!,"Usuario ${it.name} creado con éxito",Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(parentView!!,"Usuario ${it.name} creado con éxito",Snackbar.LENGTH_SHORT).show()
             } else {
-                Snackbar.make(parent_view!!,"Usuario ${it.name} modificado con éxito",Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(parentView!!,"Usuario ${it.name} modificado con éxito",Snackbar.LENGTH_SHORT).show()
             }
             startActivity(Intent(this, MainActivity::class.java))
         }

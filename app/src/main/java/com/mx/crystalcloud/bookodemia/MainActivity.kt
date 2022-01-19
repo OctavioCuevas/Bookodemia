@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         parentView = findViewById(android.R.id.content)
+        tiet_email.setText("correo@ejemplo.com")
+        tiet_password.setText("123123")
 
         setValidationListener(til_email, tiet_email)
         setValidationListener(til_password, tiet_password)
@@ -28,16 +30,16 @@ class MainActivity : AppCompatActivity() {
         btn_login.setOnClickListener {
             val email: String = tiet_email.text?.trim().toString()
             val pass: String = tiet_password.text?.trim().toString()
-            var ok: Boolean = true;
+            var ok = true
             if (email.isEmpty()) {
                 til_email.error = applicationContext.resources.getString(R.string.require_field)
-                ok = false;
+                ok = false
             } else {
                 til_email.error = null
             }
             if (pass.isEmpty()) {
                 til_password.error = applicationContext.resources.getString(R.string.require_field)
-                ok = false;
+                ok = false
             } else {
                 til_password.error = null
             }

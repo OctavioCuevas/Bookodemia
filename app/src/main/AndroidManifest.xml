@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bookodemia">
         <activity
+            android:name=".Book"
+            android:exported="false" />
+        <activity
+            android:name=".item_cardview_book"
+            android:exported="false" />
+        <activity
             android:name=".kotlin.Home"
             android:exported="false" />
         <activity

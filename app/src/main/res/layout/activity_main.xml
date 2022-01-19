@@ -10,7 +10,11 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background">
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -18,14 +22,14 @@
 
             <ImageView
                 android:id="@+id/iv_icon"
-                android:contentDescription="@string/icon"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="120dp"
+                android:contentDescription="@string/icon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/book"/>
+                app:srcCompat="@drawable/logo" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -67,16 +71,16 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:hint="@string/hint_password"
+                app:endIconMode="password_toggle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/til_email"
-                app:endIconMode="password_toggle">
+                app:layout_constraintTop_toBottomOf="@+id/til_email">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tiet_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"/>
+                    android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -97,11 +101,14 @@
                 android:id="@+id/tv_create_account"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:fontFamily="sans-serif"
                 android:text="@string/is_not_user"
                 android:textColor="?colorPrimary"
                 android:textStyle="bold"
-                android:layout_marginBottom="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btn_login" />

@@ -24,4 +24,13 @@
     <string name="books">Libros</string>
     <string name="categories">Categorías</string>
     <string name="authors">Autores</string>
+    <string name="title">Título</string>
+    <string name="by_author">by Autor</string>
+    <string name="category">Categoría</string>
+    <string name="description">Descripción</string>
+    <string name="details">Detalles</string>
+    <string name="author_about">Sobre el autor</string>
+    <string name="author_name">Nombre del autor</string>
+    <string name="mockup">Book Mockup</string>
+    <string name="lorem">Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final.</string>
 </resources>
