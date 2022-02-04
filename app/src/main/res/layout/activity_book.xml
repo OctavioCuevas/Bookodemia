@@ -24,7 +24,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/tv_username"
+                android:id="@+id/tv_back"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:includeFontPadding="false"
@@ -48,6 +48,7 @@
                 android:layout_marginRight="20dp"
                 android:drawableStart="@drawable/ic_share"
                 android:clickable="true"
+                android:contentDescription="@string/share"
                 android:foreground="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@+id/textView9"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -73,7 +74,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/tv_username"
+                app:layout_constraintStart_toEndOf="@+id/tv_back"
                 app:layout_constraintVertical_bias="0.0">
 
                 <LinearLayout

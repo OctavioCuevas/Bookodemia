@@ -1,7 +1,13 @@
 # Bookodemia
 
-Proyecto de **módulo 2**. 
+Proyecto de Librería
+
+**Módulo 2**. 
 ## Tecnologías utilizadas
 * Kotlin
 * Android
 * Material Design
+
+**Módulo 3**
+* Volley
+* Serialization

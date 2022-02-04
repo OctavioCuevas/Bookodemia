@@ -91,7 +91,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
-                        android:hint="@string/hint_user"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/register">
@@ -99,7 +98,8 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/tiet_user"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_user"/>
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -109,7 +109,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
-                        android:hint="@string/hint_email"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/til_user">
@@ -118,7 +117,8 @@
                             android:id="@+id/tiet_email"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textEmailAddress" />
+                            android:inputType="textEmailAddress"
+                            android:hint="@string/hint_email"/>
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -128,7 +128,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
-                        android:hint="@string/hint_password"
                         app:endIconMode="password_toggle"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -138,7 +137,8 @@
                             android:id="@+id/tiet_password"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textPassword" />
+                            android:inputType="textPassword"
+                            android:hint="@string/hint_password"/>
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -148,7 +148,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
-                        android:hint="@string/hint_password_c"
                         app:endIconMode="password_toggle"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -159,7 +158,8 @@
                             android:id="@+id/tiet_password_c"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textPassword" />
+                            android:inputType="textPassword"
+                            android:hint="@string/hint_password_c"/>
 
                     </com.google.android.material.textfield.TextInputLayout>
 

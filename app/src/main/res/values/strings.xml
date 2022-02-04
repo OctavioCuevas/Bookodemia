@@ -1,4 +1,18 @@
 <resources>
+    <!--SharedPreferences-->
+    <string name="name_file_preferences">com.crystalcloud.sharedPreferencesPro</string>
+    <string name="url_server">https://playground-bookstore.herokuapp.com/api/v1/</string>
+    <string name="key_token">plain-text-token</string>
+    <string name="api_login">login</string>
+    <string name="api_books">books</string>
+    <string name="api_register">register</string>
+    <string name="api_logout">logout</string>
+    <string name="api_categories">categories</string>
+    <string name="api_authors">authors</string>
+    <!-- Errors -->
+    <string name="error_422">Ya existe una cuenta con el correo ingresado</string>
+    <string name="error_internet">No hay conexión a internet</string>
+    <!-- Regular strings -->
     <string name="app_name">Bookodemia</string>
     <string name="welcome">¡Bienvenido!</string>
     <string name="email">Correo</string>
@@ -33,4 +47,5 @@
     <string name="author_name">Nombre del autor</string>
     <string name="mockup">Book Mockup</string>
     <string name="lorem">Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final.</string>
+    <string name="share">Compartir</string>
 </resources>
